@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: poppins;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    color: #40196d;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.leftnav{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.leftnav img{
+    width: 100px;
+}
+
+.leftnav ul{
+    display: flex;
+    gap: 80px;
+    list-style: none;
+    color: #40196d;
+}
+
+.RightNav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.RightNav button{
+    background: #40196d;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.RightNav img{
+    width: 50px;
+    padding: 10px;
+}
+
+.Company00{
+    border: 1px solid #fff;
+    font-size: 14px;
+    padding: 20px;
+    line-height: 40px;
+    border-radius: 5px;
+    position: absolute;
+    top: 40px;
+    background-color: #fff;
+    display: none;
+}
+
+.Company:hover .Company00{
+    display: block;
+}
+
+.Help{
+    border: 1px solid #fff;
+    font-size: 14px;
+    padding: 20px;
+    line-height: 40px;
+    border-radius: 5px;
+    position: absolute;
+    top: 40px;
+    background-color: #fff;
+    display: none;
+    /* z-index: 2; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.Help00:hover .Help{
+    display: block;
+}
+
+.Help00:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.Personal00{
+    display: flex;
+    gap: 20px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    padding: 20px;
+    line-height: 40px;
+    border-radius: 5px;
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    display: none;
+}
+
+.Personal:hover .Personal00 {   
+    display: flex;
+}
+
+.Business00{
+    display: flex;
+    gap: 20px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    padding: 20px;
+    line-height: 40px;
+    border-radius: 5px;
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    display:none;
+}
+
+.Business:hover .Business00 {   
+    display: flex;
+}
+
+/* ===================f1stsec=============== */
+
+.f1stsec{
+    padding-top: 70px;
+    padding-left: 150px;
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.f1stsecleft h1{
+    font-size: 40px;
+    color: #40196d;
+    padding-bottom: 20px;
+}
+
+.f1stsecleft p{
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+.f1stsecleft button{
+    background: #40196d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+/* ===============secondsec=============== */
+
+.secondsec{
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.secondsecinside{
+    max-width: 600px;
+    text-align: center; /* Center text within the container */
+}
+
+.secondsec li h1{
+    font-size: 30px;
+    color: #40196d;
+}
+
+.secondsec li{
+    font-size: 14px;
+}
+
+/* ============thirdsect======== */
+
+.thirdsect{
+    padding-bottom: 70px;
+    padding-top: 10px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdsecta{
+    max-width: 600px;
+    text-align: center;
+}
+
+.thirdsecta li b{
+    color: #40196d;
+}
+
+.thirdsectcircle {
+    width: 260px; /* Adjust as needed */
+    height: 260px; /* Adjust as needed */
+    overflow: hidden;
+    border-radius: 50%; /* Make it a circle */
+}
+
+.thirdsectcircle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the entire circle */
+}
+
+/* =============sliding boxes=========== */
+
+.Tenthsect1st h1{
+    color: #40196D;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tenthsect2nd{
+    display: flex;
+    padding: 100px;
+    padding-left: 150px;
+    align-items: center;
+    gap: 30px;
+}
+
+.Tenthsect2i{
+    border: 1px solid #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+}
+
+.Tenthsect2i p{
+    /* padding-bottom: 30px; */
+}
+
+.Tenthsect2ia {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Tenthsect2ia img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+
+/* =========sliding boxes======== */
+
+.Tenthsect1st{
+    padding-bottom: 50px;
+}
+
+.Tenthsect1st h1{
+    color: #40196D;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tenthsect2nd{
+    display: flex;
+    width: 100%;
+    padding: 100px 20px;
+    /* padding-left: 150px; */
+    align-items: center;
+    gap: 30px;
+}
+
+.Tenthsect2i{
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    border: 1px solid #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+}
+
+.Tenthsect2i p{
+    font-size: 12px;
+}
+
+.Tenthsect2ia {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Tenthsect2ia img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.mySwiper{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* =========images========= */
+
+.eleventhsect{
+    /* padding: 100px; */
+    padding-top: 70px;
+    /* padding-left: 150px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 30px; */
+    /* height: 100px; */
+    /* width: 180px; */
+}
+
+.eleventhsect img{
+    height: 100px;
+    width: 150px;
+}
+
+
+
+.twelve{
+    padding-bottom: 100px;
+}
+
+.twelve h1{
+    color: #40196D;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.twelve1a{
+    /* padding: 100px; */
+    /* padding-left: 150px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding-bottom: 50px;
+    /* height: 100px; */
+    /* width: 180px; */
+}
+
+.twelve1a img{
+    height: 100px;
+    width: 150px;
+}
+
+/* ========the money app======= */
+
+.fourtheen{
+    padding-top: 70px;
+    padding-left: 150px;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    background-color: #eff1ff;
+}
+
+.fourtheena h2{
+    font-size: 35px;
+    color: #40196D;
+}
+
+.fourtheena p{
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.fourtheena button{
+    background: #40196d;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+/* ==========the background write up========= */
+
+.fifteen{
+    display: flex;
+    padding-top: 150px;
+    padding-left: 150px;
+    gap: 70px;
+}
+
+.fifteen ul li{
+    /* color: #40196D; */
+    padding-bottom: 15px;
+}
+
+.fifteen ul li b{
+    color: #40196D;
+}
+
+.fifteen1 img{
+    height: 100px;
+    width: 120px;
+}
+
+
+/* ======s16th======= */
+
+
+.s16th1{
+    padding-top: 100px;
+    padding-left: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.s16th p{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    color: #979797;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s16th2{
+    padding-left: 150px;
+    padding-bottom: 100px;
+    display: flex;
+    gap: 100px;
+}
+
+.s16th2i{
+    display: flex;
+    gap: 15px;
+}
+
+.s16th2 div ul li b{
+    color: #40196D;
+}
+
+.lastsec{
+    padding-left: 150px;
+    padding-bottom: 70px;
+}
+
+.lastsec li{
+    color: #979797;
+    font-size: 15px;
+}
